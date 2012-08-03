@@ -1,0 +1,315 @@
+13 jul 2012 13:14:25,473 INFO  ~ Starting C:\play-1.2.4\perros
+13 jul 2012 13:14:36,097 WARN  ~ You're running Play! in DEV mode
+13 jul 2012 13:14:37,893 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+13 jul 2012 13:18:12,623 ERROR ~ Cannot connected to the database : Unknown database 'perros'
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'perros'
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:407)
+	at com.mysql.jdbc.Util.getInstance(Util.java:382)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3593)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3525)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:931)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:4031)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1296)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2338)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2371)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2163)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:407)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:378)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at play.db.DBPlugin.onApplicationStart(DBPlugin.java:90)
+	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:480)
+	at play.Play.start(Play.java:515)
+	at play.Play.detectChanges(Play.java:629)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+13 jul 2012 13:18:13,685 ERROR ~ 
+
+@6b2n81og8
+Internal Server Error (500) for request GET /@tests
+
+Database error
+A database error occured : Cannot connected to the database, Unknown database 'perros'
+
+play.exceptions.DatabaseException: Cannot connected to the database, Unknown database 'perros'
+	at play.db.DBPlugin.onApplicationStart(DBPlugin.java:142)
+	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:480)
+	at play.Play.start(Play.java:515)
+	at play.Play.detectChanges(Play.java:629)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'perros'
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:407)
+	at com.mysql.jdbc.Util.getInstance(Util.java:382)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3593)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3525)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:931)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:4031)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1296)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2338)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2371)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2163)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:407)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:378)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at play.db.DBPlugin.onApplicationStart(DBPlugin.java:90)
+	... 5 more
+13 jul 2012 13:18:18,310 ERROR ~ Cannot connected to the database : Unknown database 'perros'
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'perros'
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:407)
+	at com.mysql.jdbc.Util.getInstance(Util.java:382)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3593)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3525)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:931)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:4031)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1296)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2338)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2371)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2163)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:407)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:378)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at play.db.DBPlugin.onApplicationStart(DBPlugin.java:90)
+	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:480)
+	at play.Play.start(Play.java:515)
+	at play.Play.detectChanges(Play.java:618)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+13 jul 2012 13:18:18,325 ERROR ~ 
+
+@6b2n81og9
+Internal Server Error (500) for request GET /@tests
+
+Database error
+A database error occured : Cannot connected to the database, Unknown database 'perros'
+
+play.exceptions.DatabaseException: Cannot connected to the database, Unknown database 'perros'
+	at play.db.DBPlugin.onApplicationStart(DBPlugin.java:142)
+	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:480)
+	at play.Play.start(Play.java:515)
+	at play.Play.detectChanges(Play.java:618)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'perros'
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:407)
+	at com.mysql.jdbc.Util.getInstance(Util.java:382)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3593)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3525)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:931)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:4031)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1296)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2338)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2371)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2163)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:407)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:378)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at play.db.DBPlugin.onApplicationStart(DBPlugin.java:90)
+	... 5 more
+13 jul 2012 13:18:33,948 ERROR ~ Cannot connected to the database : Unknown database 'perros'
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'perros'
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:407)
+	at com.mysql.jdbc.Util.getInstance(Util.java:382)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3593)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3525)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:931)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:4031)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1296)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2338)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2371)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2163)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:407)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:378)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at play.db.DBPlugin.onApplicationStart(DBPlugin.java:90)
+	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:480)
+	at play.Play.start(Play.java:515)
+	at play.Play.detectChanges(Play.java:618)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+13 jul 2012 13:18:33,979 ERROR ~ 
+
+@6b2n81oga
+Internal Server Error (500) for request GET /@tests
+
+Database error
+A database error occured : Cannot connected to the database, Unknown database 'perros'
+
+play.exceptions.DatabaseException: Cannot connected to the database, Unknown database 'perros'
+	at play.db.DBPlugin.onApplicationStart(DBPlugin.java:142)
+	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:480)
+	at play.Play.start(Play.java:515)
+	at play.Play.detectChanges(Play.java:618)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'perros'
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:407)
+	at com.mysql.jdbc.Util.getInstance(Util.java:382)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3593)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3525)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:931)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:4031)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1296)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2338)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2371)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2163)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:407)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:378)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at play.db.DBPlugin.onApplicationStart(DBPlugin.java:90)
+	... 5 more
+13 jul 2012 13:18:36,541 ERROR ~ Cannot connected to the database : Unknown database 'perros'
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'perros'
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:407)
+	at com.mysql.jdbc.Util.getInstance(Util.java:382)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3593)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3525)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:931)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:4031)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1296)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2338)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2371)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2163)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:407)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:378)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at play.db.DBPlugin.onApplicationStart(DBPlugin.java:90)
+	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:480)
+	at play.Play.start(Play.java:515)
+	at play.Play.detectChanges(Play.java:618)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+13 jul 2012 13:18:36,572 ERROR ~ 
+
+@6b2n81ogb
+Internal Server Error (500) for request GET /@tests
+
+Database error
+A database error occured : Cannot connected to the database, Unknown database 'perros'
+
+play.exceptions.DatabaseException: Cannot connected to the database, Unknown database 'perros'
+	at play.db.DBPlugin.onApplicationStart(DBPlugin.java:142)
+	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:480)
+	at play.Play.start(Play.java:515)
+	at play.Play.detectChanges(Play.java:618)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'perros'
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:407)
+	at com.mysql.jdbc.Util.getInstance(Util.java:382)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3593)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3525)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:931)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:4031)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1296)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2338)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2371)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2163)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:407)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:378)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at play.db.DBPlugin.onApplicationStart(DBPlugin.java:90)
+	... 5 more
+13 jul 2012 13:18:37,353 ERROR ~ Cannot connected to the database : Unknown database 'perros'
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'perros'
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:407)
+	at com.mysql.jdbc.Util.getInstance(Util.java:382)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3593)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3525)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:931)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:4031)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1296)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2338)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2371)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2163)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:407)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:378)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at play.db.DBPlugin.onApplicationStart(DBPlugin.java:90)
+	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:480)
+	at play.Play.start(Play.java:515)
+	at play.Play.detectChanges(Play.java:618)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+13 jul 2012 13:18:37,369 ERROR ~ 
+
+@6b2n81ogc
+Internal Server Error (500) for request GET /@tests
+
+Database error
+A database error occured : Cannot connected to the database, Unknown database 'perros'
+
+play.exceptions.DatabaseException: Cannot connected to the database, Unknown database 'perros'
+	at play.db.DBPlugin.onApplicationStart(DBPlugin.java:142)
+	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:480)
+	at play.Play.start(Play.java:515)
+	at play.Play.detectChanges(Play.java:618)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'perros'
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:407)
+	at com.mysql.jdbc.Util.getInstance(Util.java:382)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3593)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3525)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:931)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:4031)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1296)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2338)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2371)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2163)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:407)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:378)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at play.db.DBPlugin.onApplicationStart(DBPlugin.java:90)
+	... 5 more
+13 jul 2012 13:19:14,738 INFO  ~ Connected to jdbc:mysql://localhost/perritos?useUnicode=yes&characterEncoding=UTF-8&connectionCollation=utf8_general_ci
+13 jul 2012 13:19:18,925 INFO  ~ Application 'perros' is now started !
